@@ -8,9 +8,10 @@
 </head>
 
 <body>
-  <button onclick="Statsig.init('client-wlH3WMkysINMhMU8VrNBkbjrEr2JQrqgxKwDPOUosJK', {userID:'a-user'})">Init</button>
-  <button onclick="console.log(Statsig.gate('test_public'))">Gate Check</button>
-  <button onclick="console.log(Statsig.experiment('running_exp_in_layer_with_holdout'))">Get Experiment</button>
+  <button onclick="Statsig.init('client-rfLvYGag3eyU0jYW5zcIJTQip7GXxSrhOFN69IGMjvq', {userID:'a-user'})">Init</button>
+  <button onclick="console.log('a_gate:', Statsig.gate('a_gate'))">Gate Check</button>
+  <button onclick="console.log('an_experiment', Statsig.experiment('an_experiment'))">Get Experiment</button>
+  <button onclick="Statsig.log('my_custom_event')">Log Event</button>
 </body>
 
 </html>
